@@ -18,13 +18,6 @@ class ScrollingActivity : AppCompatActivity() {
 
         binding = ActivityScrollingBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
