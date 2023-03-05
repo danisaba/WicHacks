@@ -1,15 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SymptomsTracking">
+    android:layout_width="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="symptoms tracking" />
+        android:padding="40dp"
+        tools:context=".SymptomsTracking">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Please check your symptoms for today!"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/acne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acne"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/textView3"/>
+
+        <CheckBox
+            android:id="@+id/anxiety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anxiety"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/acne"/>
+
+        <CheckBox
+            android:id="@+id/bloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bloating"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/anxiety"/>
+
+        <CheckBox
+            android:id="@+id/bodyaches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Aches"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/bloating"/>
+
+        <CheckBox
+            android:id="@+id/tenderness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breast Tenderness"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/bodyaches"/>
+
+        <CheckBox
+            android:id="@+id/cramping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cramping"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/tenderness"/>
+
+        <CheckBox
+            android:id="@+id/depression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depression"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/cramping"/>
+
+        <CheckBox
+            android:id="@+id/diarrhea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diarrhea"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/depression"/>
+
+        <CheckBox
+            android:id="@+id/irritable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easily Irritated"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/diarrhea"/>
+
+        <CheckBox
+            android:id="@+id/fatigue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fatigue"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/irritable"/>
+
+        <CheckBox
+            android:id="@+id/headache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Headache"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/fatigue"/>
+
+        <CheckBox
+            android:id="@+id/flashes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot Flashes"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/headache"/>
+
+        <CheckBox
+            android:id="@+id/hunger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hungry/Cravings"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/flashes"/>
+
+        <CheckBox
+            android:id="@+id/libido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low Libido"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/hunger"/>
+
+        <CheckBox
+            android:id="@+id/sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Changes in Sleep"
+            android:layout_gravity= "right"
+            app:layout_constraintTop_toBottomOf="@id/libido"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AB4CAF50"
+            android:fontFamily="@font/aclonica"
+            android:text="Submit Symptoms"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/sleep"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
