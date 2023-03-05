@@ -4,12 +4,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:background="@color/caper">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#1EFFFFFF"
         android:padding="40dp"
         tools:context=".ScrollingActivity">
 
@@ -18,68 +20,101 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/josefin_slab_bold"
             android:text="MOTIVATIONAL MESSAGE HEY U GOT THIS ITS SO COOL YOU ARE GONNA DO SO WELL GOOD LUCK FRIEND"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:background="@color/dark_goldenrod"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/quincy"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:onClick="pavlova"
             android:text="Track Your Cycle"
-            android:textColor="@android:color/black"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView3" />
+            app:layout_constraintTop_toBottomOf="@id/textView3"
+            app:sl_cornerRadius="56dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="#AA000000"
+            app:sl_shadowRadius="4dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/quincy"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:onClick="pavlova"
             android:text="Symptoms"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="80dp"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button2"/>
+            app:layout_constraintTop_toBottomOf="@id/button2" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/quincy"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:onClick="pavlova"
             android:text="Medication"
-            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button3"/>
+            app:layout_constraintTop_toBottomOf="@id/button3" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/quincy"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:onClick="pavlova"
             android:text="Water Intake"
-            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button4"/>
+            app:layout_constraintTop_toBottomOf="@id/button4" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/quincy"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:onClick="pavlova"
             android:text="Give us Feedback"
-            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button5"/>
+            app:layout_constraintTop_toBottomOf="@id/button5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
