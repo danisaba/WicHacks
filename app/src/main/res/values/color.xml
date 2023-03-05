@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="wasabi">#708532</color>
+    <color name="caper">#B7C68B</color>
+    <color name="moon_glow">#F4F0CB</color>
+    <color name="sapling">#DED29F</color>
+    <color name="pavlova">#B3A580</color>
+    <color name="quincy">#685642</color>
+
     <color name="white">#FFFFFF</color>
     <color name="ivory">#FFFFF0</color>
     <color name="light_yellow">#FFFFE0</color>
