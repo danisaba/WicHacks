@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import androidx.room.Room
 import com.example.wichacks.databinding.ActivityScrollingBinding
 
 class ScrollingActivity : AppCompatActivity() {
@@ -15,6 +16,18 @@ class ScrollingActivity : AppCompatActivity() {
 
         binding = ActivityScrollingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //Initialize the app's database
+        val db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java, "symptoms"
+        ).build()
+
+        val symptomDao = db.symptomDao()
+        val symptoms: List<SymptomEntry> = symptomDao.getAll()
+        val testEntry = SymptomEntry(0, false, false, false, true, false, false, true, false);
+        symptomDao.insertAll()
+
 
         //This is the button press that will take you to the CycleTracking
         val cycleButtonClick = findViewById<Button>(R.id.button2)

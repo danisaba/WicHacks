@@ -5,8 +5,14 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class MoodEntry(
-    @PrimaryKey val uid: Int,
-    @ColumnInfo(name = "first_name") val firstName: String?,
-    @ColumnInfo(name = "last_name") val lastName: String?
+data class SymptomEntry(
+    @PrimaryKey val day: Long,
+    @ColumnInfo(name = "cramp") val cramp: Boolean?,
+    @ColumnInfo(name = "bloat") val bloat: Boolean?,
+    @ColumnInfo(name = "tender") val tender: Boolean?,
+    @ColumnInfo(name = "headache") val headache: Boolean?,
+    @ColumnInfo(name = "fatigue") val fatigue: Boolean?,
+    @ColumnInfo(name = "hungry") val hungry: Boolean?,
+    @ColumnInfo(name = "libido") val libido: Boolean?,
+    @ColumnInfo(name = "acne") val acne: Boolean?
 )
