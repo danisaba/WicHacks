@@ -10,7 +10,7 @@ import android.view.MenuItem
 import com.example.wichacks.databinding.ActivityScrollingBinding
 
 class ScrollingActivity : AppCompatActivity() {
-
+// comment
     private lateinit var binding: ActivityScrollingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
