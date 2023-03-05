@@ -176,25 +176,30 @@
             android:id="@+id/frown"
             android:layout_width="82dp"
             android:layout_height="93dp"
+            app:layout_constraintEnd_toStartOf="@+id/neutral"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/frown_foreground"
-            tools:layout_editor_absoluteX="3dp"
-            tools:layout_editor_absoluteY="60dp" />
+            tools:layout_editor_absoluteY="77dp" />
 
         <ImageButton
             android:id="@+id/neutral"
             android:layout_width="104dp"
             android:layout_height="92dp"
-            app:srcCompat="@drawable/neutral_foreground"
-            tools:layout_editor_absoluteX="104dp"
-            tools:layout_editor_absoluteY="59dp" />
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/happy"
+            app:layout_constraintTop_toBottomOf="@+id/mood"
+            app:srcCompat="@drawable/neutral_foreground" />
 
         <ImageButton
             android:id="@+id/happy"
             android:layout_width="105dp"
             android:layout_height="108dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/frown_foreground"
-            tools:layout_editor_absoluteX="236dp"
-            tools:layout_editor_absoluteY="63dp" />
+            tools:layout_editor_absoluteY="68dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
