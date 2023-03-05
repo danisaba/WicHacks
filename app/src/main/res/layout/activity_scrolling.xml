@@ -6,25 +6,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/caper">
+    android:id="@+id/rectangle_2"
+    android:background="@drawable/gradient_background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#1EFFFFFF"
-        android:padding="40dp"
+        android:padding="10dp"
         tools:context=".ScrollingActivity">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="88dp"
             android:fontFamily="@font/josefin_slab_bold"
             android:text="MOTIVATIONAL MESSAGE HEY U GOT THIS ITS SO COOL YOU ARE GONNA DO SO WELL GOOD LUCK FRIEND"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,14 +37,14 @@
             android:layout_marginTop="100dp"
             android:background="@color/quincy"
             android:drawableStart="@drawable/drop"
-            android:paddingStart="20dp"
+            android:elevation="3dp"
             android:fontFamily="@font/josefin_slab_semibold"
             android:onClick="pavlova"
+            android:paddingStart="20dp"
             android:text="Track Your Cycle"
             android:textColor="@color/white"
             android:textColorHighlight="@color/caper"
             android:textSize="20sp"
-            android:elevation="3dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,9 +62,9 @@
             android:layout_marginTop="24dp"
             android:background="@color/quincy"
             android:drawableStart="@drawable/face"
-            android:paddingStart="20dp"
             android:fontFamily="@font/josefin_slab_semibold"
             android:onClick="pavlova"
+            android:paddingStart="20dp"
             android:text="Symptoms"
             android:textColor="@color/white"
             android:textColorHighlight="@color/caper"
@@ -79,9 +81,9 @@
             android:layout_marginTop="24dp"
             android:background="@color/quincy"
             android:drawableStart="@drawable/pill"
-            android:paddingStart="20dp"
             android:fontFamily="@font/josefin_slab_semibold"
             android:onClick="pavlova"
+            android:paddingStart="20dp"
             android:text="Medication"
             android:textColor="@color/white"
             android:textColorHighlight="@color/caper"
@@ -98,10 +100,10 @@
             android:layout_marginTop="24dp"
             android:background="@color/quincy"
             android:drawableStart="@drawable/water"
-            android:paddingStart="20dp"
             android:drawableTint="@color/white"
             android:fontFamily="@font/josefin_slab_semibold"
             android:onClick="pavlova"
+            android:paddingStart="20dp"
             android:text="Water Intake"
             android:textColor="@color/white"
             android:textColorHighlight="@color/caper"
@@ -117,10 +119,10 @@
             android:layout_marginTop="24dp"
             android:background="@color/quincy"
             android:drawableStart="@drawable/feedback"
-            android:paddingStart="20dp"
             android:drawableTint="@color/white"
             android:fontFamily="@font/josefin_slab_semibold"
             android:onClick="pavlova"
+            android:paddingStart="20dp"
             android:text="Give us Feedback"
             android:textColor="@color/white"
             android:textColorHighlight="@color/caper"
@@ -128,6 +130,26 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/button5" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:elevation="4dp"
+            app:srcCompat="@drawable/val_logo"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_slab_bold"
+            android:text="Valkyrie"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="11dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
