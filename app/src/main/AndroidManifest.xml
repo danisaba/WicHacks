@@ -12,6 +12,9 @@
         android:theme="@style/Theme.WicHacks"
         tools:targetApi="31">
         <activity
+            android:name=".MedicationAdding"
+            android:exported="false" />
+        <activity
             android:name=".CycleTracking"
             android:exported="false" />
         <activity
