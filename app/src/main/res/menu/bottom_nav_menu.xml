@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/house"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/mood"
+        android:title="Mood/Symptoms"
+        android:icon="@drawable/face"/>
+    <item
+        android:id="@+id/meds"
+        android:title="Medication"
+        android:icon="@drawable/pill"/>
+    <item
+        android:id="@+id/period"
+        android:title="Menstruation"
+        android:icon="@drawable/drop"/>
+</menu>

@@ -5,7 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:background="@color/caper">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -179,7 +181,7 @@
             app:layout_constraintEnd_toStartOf="@+id/neutral"
             app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/frown_foreground"
+            app:srcCompat="@drawable/frown_foreground.xml"
             tools:layout_editor_absoluteY="77dp" />
 
         <ImageButton
