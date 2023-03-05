@@ -45,7 +45,8 @@
             android:layout_height="wrap_content"
             android:text="Acne"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/textView3"/>
+            app:layout_constraintTop_toBottomOf="@id/textView3"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/anxiety"
