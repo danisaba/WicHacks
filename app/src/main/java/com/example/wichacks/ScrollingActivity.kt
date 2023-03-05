@@ -1,12 +1,9 @@
 package com.example.wichacks
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.appbar.CollapsingToolbarLayout
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
+import android.widget.Button
 import com.example.wichacks.databinding.ActivityScrollingBinding
 
 class ScrollingActivity : AppCompatActivity() {
@@ -18,22 +15,39 @@ class ScrollingActivity : AppCompatActivity() {
 
         binding = ActivityScrollingBinding.inflate(layoutInflater)
         setContentView(binding.root)
-    }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_scrolling, menu)
-        return true
-    }
+        //This is the button press that will take you to the CycleTracking
+        val cycleButtonClick = findViewById<Button>(R.id.button2)
+        cycleButtonClick.setOnClickListener {
+            val intent = Intent(this, CycleTracking::class.java)
+            startActivity(intent)
+        }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+        //This is the button press that will take you to the SymptomTracking
+        val symptButtonClick = findViewById<Button>(R.id.button3)
+        symptButtonClick.setOnClickListener {
+            val intent = Intent(this, SymptomsTracking::class.java)
+            startActivity(intent)
+        }
+        //This is the button press that will take you to the MedicationTracking
+        val medsButtonClick = findViewById<Button>(R.id.button4)
+        medsButtonClick.setOnClickListener {
+            val intent = Intent(this, MedicationTracking::class.java)
+            startActivity(intent)
+        }
 
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
+        //This is the button press that will take you to the WaterTracking
+        val waterButtonClick = findViewById<Button>(R.id.button5)
+        waterButtonClick.setOnClickListener {
+            val intent = Intent(this, WaterTracking::class.java)
+            startActivity(intent)
+        }
+
+        //This is the button press that will take you to the Feedback page
+        val feedButtonClick = findViewById<Button>(R.id.button6)
+        feedButtonClick.setOnClickListener {
+            val intent = Intent(this, Feedback::class.java)
+            startActivity(intent)
         }
     }
 }
