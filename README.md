@@ -10,6 +10,6 @@ By 24 hours, we aim to have completed a rough version of an Android application 
  * Water Tracking
  * Feedback System
  
-As well as this, we have a small website set up for the application that guides users to download the app or email for feedback. 
+As well as this, we have a small website idea for the application that guides users to download the app or email for feedback. 
 
 We hope you enjoy!
