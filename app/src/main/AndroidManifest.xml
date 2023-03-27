@@ -12,6 +12,24 @@
         android:theme="@style/Theme.WicHacks"
         tools:targetApi="31">
         <activity
+            android:name=".MedicationAdding"
+            android:exported="false" />
+        <activity
+            android:name=".CycleTracking"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".WaterTracking"
+            android:exported="false" />
+        <activity
+            android:name=".MedicationTracking"
+            android:exported="false" />
+        <activity
+            android:name=".SymptomsTracking"
+            android:exported="false" />
+        <activity
             android:name=".ScrollingActivity"
             android:exported="true"
             android:label="@string/app_name"
