@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -54,7 +55,8 @@
             android:layout_height="wrap_content"
             android:text="Anxiety"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/acne"/>
+            app:layout_constraintTop_toBottomOf="@id/acne"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/bloating"
@@ -62,7 +64,8 @@
             android:layout_height="wrap_content"
             android:text="Bloating"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/anxiety"/>
+            app:layout_constraintTop_toBottomOf="@id/anxiety"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/bodyaches"
@@ -70,7 +73,8 @@
             android:layout_height="wrap_content"
             android:text="Body Aches"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/bloating"/>
+            app:layout_constraintTop_toBottomOf="@id/bloating"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/tenderness"
@@ -78,7 +82,8 @@
             android:layout_height="wrap_content"
             android:text="Breast Tenderness"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/bodyaches"/>
+            app:layout_constraintTop_toBottomOf="@id/bodyaches"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/cramping"
@@ -86,7 +91,8 @@
             android:layout_height="wrap_content"
             android:text="Cramping"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/tenderness"/>
+            app:layout_constraintTop_toBottomOf="@id/tenderness"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/depression"
@@ -94,7 +100,8 @@
             android:layout_height="wrap_content"
             android:text="Depression"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/cramping"/>
+            app:layout_constraintTop_toBottomOf="@id/cramping"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/diarrhea"
@@ -102,7 +109,8 @@
             android:layout_height="wrap_content"
             android:text="Diarrhea"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/depression"/>
+            app:layout_constraintTop_toBottomOf="@id/depression"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/irritable"
@@ -110,7 +118,8 @@
             android:layout_height="wrap_content"
             android:text="Easily Irritated"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/diarrhea"/>
+            app:layout_constraintTop_toBottomOf="@id/diarrhea"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/fatigue"
@@ -118,7 +127,8 @@
             android:layout_height="wrap_content"
             android:text="Fatigue"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/irritable"/>
+            app:layout_constraintTop_toBottomOf="@id/irritable"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/headache"
@@ -126,7 +136,8 @@
             android:layout_height="wrap_content"
             android:text="Headache"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/fatigue"/>
+            app:layout_constraintTop_toBottomOf="@id/fatigue"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/flashes"
@@ -134,7 +145,8 @@
             android:layout_height="wrap_content"
             android:text="Hot Flashes"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/headache"/>
+            app:layout_constraintTop_toBottomOf="@id/headache"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/hunger"
@@ -142,7 +154,8 @@
             android:layout_height="wrap_content"
             android:text="Hungry/Cravings"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/flashes"/>
+            app:layout_constraintTop_toBottomOf="@id/flashes"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/libido"
@@ -150,7 +163,8 @@
             android:layout_height="wrap_content"
             android:text="Low Libido"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/hunger"/>
+            app:layout_constraintTop_toBottomOf="@id/hunger"
+            tools:ignore="MissingConstraints" />
 
         <CheckBox
             android:id="@+id/sleep"
@@ -158,7 +172,8 @@
             android:layout_height="wrap_content"
             android:text="Changes in Sleep"
             android:layout_gravity= "right"
-            app:layout_constraintTop_toBottomOf="@id/libido"/>
+            app:layout_constraintTop_toBottomOf="@id/libido"
+            tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/submitButton"
@@ -191,7 +206,7 @@
             android:layout_width="105dp"
             android:layout_height="108dp"
             android:layout_marginTop="44dp"
-            android:tint="@color/black"
+            app:tint="@color/black"
             app:layout_constraintStart_toEndOf="@id/neutral"
             app:layout_constraintTop_toBottomOf="@+id/mood"
             app:srcCompat="@drawable/happy_foreground" />

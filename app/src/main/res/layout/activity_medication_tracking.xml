@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MedicationTracking">
+    tools:context=".MedicationTracking"
+    android:background="@drawable/gradient_background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,10 +17,17 @@
             android:id="@+id/medButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#AB4CAF50"
-            android:fontFamily="@font/aclonica"
+            android:drawableStart="@drawable/pill"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
+            android:elevation="3dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:background="@color/quincy"
+            android:onClick="pavlova"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:text="Add New Medication"
-            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.544"
@@ -41,17 +49,26 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/backtoScroll"
-            android:layout_width="175dp"
-            android:layout_height="50dp"
-            android:background="#AB4CAF50"
-            android:fontFamily="@font/aclonica"
+            android:id="@+id/backtoScrollMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@color/quincy"
+            android:drawableStart="@drawable/homeicon"
+            android:elevation="3dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:onClick="pavlova"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:text="Back to Home"
-            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="176dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

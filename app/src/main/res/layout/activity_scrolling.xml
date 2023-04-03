@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="88dp"
             android:fontFamily="@font/josefin_slab_bold"
-            android:text="MOTIVATIONAL MESSAGE HEY U GOT THIS ITS SO COOL YOU ARE GONNA DO SO WELL GOOD LUCK FRIEND"
+            android:text="“Don’t be perfect. Be you. Don’t be what you think they want you to be. Be what you know you are. Don’t look outside yourself for anything. It’s all within.”\n Jackson Kiddard"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
