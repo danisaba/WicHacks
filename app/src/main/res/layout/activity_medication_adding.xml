@@ -19,4 +19,17 @@
             android:hint="How often do you take this medicine? (Ex: Daily, Weekly)"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="207dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backToMed"
+            android:layout_width="283dp"
+            android:layout_height="56dp"
+            android:background="#AB4CAF50"
+            android:fontFamily="@font/aclonica"
+            android:text="Back to Medication Page"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="341dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

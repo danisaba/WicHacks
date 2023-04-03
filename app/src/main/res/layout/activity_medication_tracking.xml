@@ -12,15 +12,6 @@
         android:padding="40dp"
         tools:context=".ScrollingActivity">
 
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RadioButton"
-            tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="88dp" />
-
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/medButton"
             android:layout_width="wrap_content"
@@ -32,7 +23,36 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.544"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/josefin_slab_bold"
+            android:text="Medication name/Time"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backtoScroll"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:background="#AB4CAF50"
+            android:fontFamily="@font/aclonica"
+            android:text="Back to Home"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="176dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

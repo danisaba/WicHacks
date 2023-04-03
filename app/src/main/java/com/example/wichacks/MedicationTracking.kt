@@ -17,5 +17,11 @@ class MedicationTracking : AppCompatActivity() {
             val intent = Intent(this, MedicationAdding::class.java)
             startActivity(intent)
         }
+
+        val backHome = findViewById<Button>(R.id.medButton)
+        backHome.setOnClickListener {
+            val intent = Intent(this, ScrollingActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
