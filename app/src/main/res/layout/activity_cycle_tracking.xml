@@ -1,80 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_height="match_parent"
-android:layout_width="match_parent"
-android:background="@drawable/gradient_background">
-
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="40dp"
-    tools:context=".ScrollingActivity">
+    android:layout_height="match_parent"
+    tools:context=".Feedback"
+    android:background="@drawable/gradient_background">
 
-    <TextView
-        android:id="@+id/pastText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/aclonica"
-        android:text="Past Period Data:"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/pastText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:textColor="@color/black"
+            android:text="Past Period Data:"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <CalendarView
-        android:id="@+id/pastPeriod"
-        android:layout_width="331dp"
-        android:layout_height="273dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pastText"
-        android:minDate= "03/01/2023"/>
+        <CalendarView
+            android:id="@+id/pastPeriod"
+            android:layout_width="331dp"
+            android:layout_height="273dp"
+            android:minDate="03/01/2023"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pastText" />
 
-    <TextView
-        android:id="@+id/currText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/aclonica"
-        android:text="Future Period Prediction:"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pastPeriod" />
+        <TextView
+            android:id="@+id/currText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:textColor="@color/black"
+            android:text="Future Period Prediction:"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pastPeriod" />
 
-    <CalendarView
-        android:id="@+id/currentPeriod"
-        android:layout_width="331dp"
-        android:layout_height="271dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pastPeriod"
-        android:minDate= "03/01/2023"/>
+        <CalendarView
+            android:id="@+id/currentPeriod"
+            android:layout_width="331dp"
+            android:layout_height="271dp"
+            android:layout_marginTop="20dp"
+            android:minDate="03/01/2023"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pastPeriod" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/logButton"
-        android:layout_width="243dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:background="#AB4CAF50"
-        android:fontFamily="@font/aclonica"
-        android:text="Log new period"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/currentPeriod" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logButton"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="Log new period"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
+            android:elevation="3dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:background="@color/quincy"
+            android:onClick="pavlova"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/currentPeriod" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backToScrollFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/homeicon"
+            android:text="Back to Home"
+            android:onClick="pavlova"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
+            android:elevation="3dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:background="@color/quincy"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</RelativeLayout>

@@ -11,6 +11,27 @@
         android:padding="40dp"
         tools:context=".ScrollingActivity">
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backToScrollWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/homeicon"
+            android:text="Back to Home"
+            android:onClick="pavlova"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
+            android:elevation="3dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:background="@color/quincy"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
