@@ -1,5 +1,6 @@
 package com.example.wichacks
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,6 +18,11 @@ class SymptomsTracking : AppCompatActivity() {
             Toast.makeText(
                 applicationContext,
                 "Your response has been recorded", Toast.LENGTH_LONG).show()
+        }
+        val backHome = findViewById<Button>(R.id.backtoScrollSymptoms)
+        backHome.setOnClickListener {
+            val intent = Intent(this, ScrollingActivity::class.java)
+            startActivity(intent)
         }
     }
     fun onCheckboxClicked(view: View) {

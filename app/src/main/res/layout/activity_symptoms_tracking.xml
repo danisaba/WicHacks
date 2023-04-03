@@ -19,10 +19,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:textColor="@color/black"
             android:text="How are you feeling today?"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,11 +32,12 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
-            android:fontFamily="@font/aclonica"
+            android:layout_marginTop="250dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:textColor="@color/black"
             android:text="What symptoms are you feeling today?"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -45,6 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Acne"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/textView3"
             tools:ignore="MissingConstraints" />
@@ -54,6 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Anxiety"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/acne"
             tools:ignore="MissingConstraints" />
@@ -63,6 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bloating"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/anxiety"
             tools:ignore="MissingConstraints" />
@@ -72,6 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Body Aches"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/bloating"
             tools:ignore="MissingConstraints" />
@@ -81,6 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Breast Tenderness"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/bodyaches"
             tools:ignore="MissingConstraints" />
@@ -90,6 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cramping"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/tenderness"
             tools:ignore="MissingConstraints" />
@@ -99,6 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Depression"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/cramping"
             tools:ignore="MissingConstraints" />
@@ -108,6 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Diarrhea"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/depression"
             tools:ignore="MissingConstraints" />
@@ -117,6 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Easily Irritated"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/diarrhea"
             tools:ignore="MissingConstraints" />
@@ -126,6 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Fatigue"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/irritable"
             tools:ignore="MissingConstraints" />
@@ -135,6 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Headache"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/fatigue"
             tools:ignore="MissingConstraints" />
@@ -144,6 +157,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hot Flashes"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/headache"
             tools:ignore="MissingConstraints" />
@@ -153,6 +167,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hungry/Cravings"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/flashes"
             tools:ignore="MissingConstraints" />
@@ -162,6 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Low Libido"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/hunger"
             tools:ignore="MissingConstraints" />
@@ -171,6 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Changes in Sleep"
+            android:fontFamily="@font/josefin_slab_semibold"
             android:layout_gravity= "right"
             app:layout_constraintTop_toBottomOf="@id/libido"
             tools:ignore="MissingConstraints" />
@@ -179,16 +196,42 @@
             android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#AB4CAF50"
-            android:fontFamily="@font/aclonica"
             android:text="Submit Symptoms"
-            android:textSize="16sp"
+            android:onClick="pavlova"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
+            android:elevation="3dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:background="@color/quincy"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/sleep"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backtoScrollSymptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/homeicon"
+            android:text="Back to Home"
+            android:onClick="pavlova"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/caper"
+            android:textSize="20sp"
+            android:elevation="3dp"
+            android:fontFamily="@font/josefin_slab_semibold"
+            android:background="@color/quincy"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submitButton" />
 
         <ImageButton
             android:id="@+id/neutral"
